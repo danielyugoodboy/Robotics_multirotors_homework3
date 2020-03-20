@@ -23,7 +23,7 @@ Matrix addition and subtraction can also be apply by + and -.
 
 Declare Eigen 3x1 Vector with each element as double.
 Vector dot and cross operation are applied.
-<img src="https://github.com/Robotics-Aerial-Robots/Homework3/blob/master/Figures/2.png" width="80%" height="40%">
+<img src="https://github.com/Robotics-Aerial-Robots/Homework3/blob/master/Figures/2.png" width="80%" height="50%">
 
 Declare Eigen 3x3 Matrix and 3x1 Vector.
 By apply block operation to Eigen 4x4 Matrix, we can obtain a sub-block.
@@ -31,7 +31,7 @@ For example, block<3,3>(0,0) means extract a Eigen 3x3 Matrix from the matrix in
 Then apply two transformation to the vector.
 We should notice applying rotation first and translation first will have different result.
 These two types of transformation is oftenly used, one should use rotation first or translation first depend on the frame of transformation.
-<img src="https://github.com/Robotics-Aerial-Robots/Homework3/blob/master/Figures/3.png" width="80%" height="40%">
+<img src="https://github.com/Robotics-Aerial-Robots/Homework3/blob/master/Figures/3.png" width="80%" height="50%">
 
 ### eigen_transform.cpp
 
@@ -44,10 +44,10 @@ These two types of transformation is oftenly used, one should use rotation first
 <img src="https://github.com/Robotics-Aerial-Robots/Homework3/blob/master/Figures/6.png" width="80%" height="40%">
 
 
-<img src="https://github.com/Robotics-Aerial-Robots/Homework3/blob/master/Figures/7.png" width="80%" height="40%">
+<img src="https://github.com/Robotics-Aerial-Robots/Homework3/blob/master/Figures/7.png" width="80%" height="50%">
 
 
-<img src="https://github.com/Robotics-Aerial-Robots/Homework3/blob/master/Figures/8.png" width="80%" height="40%">
+<img src="https://github.com/Robotics-Aerial-Robots/Homework3/blob/master/Figures/8.png" width="60%" height="30%">
 
 
 <img src="https://github.com/Robotics-Aerial-Robots/Homework3/blob/master/Figures/9.png" width="80%" height="40%">
