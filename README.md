@@ -24,7 +24,7 @@ We can directly given the matrix value by <<.
 Matrix addition and subtraction can also be apply by + and -.
 transform1 represent rotation of Z-axis in 90 and translation of X-axis in 1. 
 transform2 represent rotation of Z-axis in -90 and translation of Y-axis in -1. 
-<img src="https://github.com/Robotics-Aerial-Robots/Homework3/blob/master/Figures/rotation.png" width="80%" height="40%">
+<img src="https://github.com/Robotics-Aerial-Robots/Homework3/blob/master/Figures/rotation.png" width="60%" height="20%">
 <img src="https://github.com/Robotics-Aerial-Robots/Homework3/blob/master/Figures/1.png" width="80%" height="40%">
 
 Declare Eigen 3x1 Vector with each element as double.
@@ -48,13 +48,13 @@ Then convert to quaternion.
 <img src="https://github.com/Robotics-Aerial-Robots/Homework3/blob/master/Figures/5.png" width="70%" height="30%">
 
 Implement the code for conversion.
-<img src="https://github.com/Robotics-Aerial-Robots/Homework3/blob/master/Figures/8.png" width="60%" height="30%">
+<img src="https://github.com/Robotics-Aerial-Robots/Homework3/blob/master/Figures/8.png" width="70%" height="30%">
 
 We use ZYX for Euler to quaternion.
 <img src="https://github.com/Robotics-Aerial-Robots/Homework3/blob/master/Figures/9.png" width="80%" height="40%">
 
 Implement the code for conversion.
-<img src="https://github.com/Robotics-Aerial-Robots/Homework3/blob/master/Figures/Q2E.png" width="80%" height="40%">
+<img src="https://github.com/Robotics-Aerial-Robots/Homework3/blob/master/Figures/Q2E.png" width="60%" height="20%">
 <img src="https://github.com/Robotics-Aerial-Robots/Homework3/blob/master/Figures/10.png" width="80%" height="40%">
 
 Eigen slerp is a function to obtain a propotion rotation.
