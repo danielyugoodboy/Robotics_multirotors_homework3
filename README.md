@@ -9,12 +9,13 @@ Deadline:
 更多Eigen應用可參考https://eigen.tuxfamily.org/dox/group__QuickRefPage.html
 
 ### 指令
+
 ```
 	roscore
 	rosrun HW3 eigen_tutorial
 	rosrun HW3 eigen_transform 
-
 ```
+
 ### eigen_tutorial.cpp
 Declare Eigen 4x4 Matrix with each element as double.
 We can directly given the matrix value by <<.
@@ -44,7 +45,7 @@ These two types of transformation is oftenly used, one should use rotation first
 <img src="https://github.com/Robotics-Aerial-Robots/Homework3/blob/master/Figures/6.png" width="80%" height="40%">
 
 
-<img src="https://github.com/Robotics-Aerial-Robots/Homework3/blob/master/Figures/7.png" width="80%" height="50%">
+<img src="https://github.com/Robotics-Aerial-Robots/Homework3/blob/master/Figures/7.png" width="90%" height="50%">
 
 
 <img src="https://github.com/Robotics-Aerial-Robots/Homework3/blob/master/Figures/8.png" width="60%" height="30%">
