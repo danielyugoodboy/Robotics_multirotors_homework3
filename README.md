@@ -67,7 +67,7 @@ Here we set s=0.667, so the 0.667 of 90 degrees will be 60.
 <img src="https://github.com/Robotics-Aerial-Robots/Homework3/blob/master/Figures/6.png" width="80%" height="40%">
 
 Apply the rotation after slerp(Q_tmp) to the point(world_point). \
-(Use Q_tmp to rotate world_point and update world_point)
+(**Use Q_tmp to rotate world_point and update world_point**) \
 The while loop should break after six times of rotation.
 <img src="https://github.com/Robotics-Aerial-Robots/Homework3/blob/master/Figures/7.png" width="90%" height="50%">
 
