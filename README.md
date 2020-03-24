@@ -2,15 +2,18 @@
 # 108 年度 機器人學：多軸旋翼機 
 
 ### HW3
-Eigen is a C++ template library for linear algebra: matrices, vectors, numerical solvers, and related algorithms.
-Deadline: 
+Eigen is a C++ template library for linear algebra: matrices, vectors, numerical solvers, and related algorithms. \
+Deadline: 4/6!!!
 ---
 
 ## 題目
-學習基本Eigen操作，並了解旋轉矩陣和四元數與歐拉角的關係，
+學習基本Eigen操作，並了解旋轉矩陣和四元數與歐拉角的關係， \
 更多Eigen應用可參考https://eigen.tuxfamily.org/dox/group__QuickRefPage.html
 
 ### 指令
+
+eigen_tutorial.cpp 不須更改程式碼，看懂Eigen操作即可 \
+eigen_transform.cpp 請在(Implement your code here)輸入對應程式
 
 ```
 	roscore
@@ -20,10 +23,10 @@ Deadline:
 
 ### eigen_tutorial.cpp
 Declare Eigen 4x4 Matrix with each element as double. \
-We can directly given the matrix value by <<.
-Matrix addition and subtraction can also be apply by + and -.
-transform1 represent rotation of Z-axis in -90 and translation of X-axis in 1. 
-transform2 represent rotation of Z-axis in 90 and translation of Y-axis in -1. 
+We can directly given the matrix value by <<. \
+Matrix addition and subtraction can also be apply by + and -. \
+transform1 represent rotation of Z-axis in -90 and translation of X-axis in 1.  \
+transform2 represent rotation of Z-axis in 90 and translation of Y-axis in -1.  \
 <img src="https://github.com/Robotics-Aerial-Robots/Homework3/blob/master/Figures/rotation.png" width="60%" height="20%">
 <img src="https://github.com/Robotics-Aerial-Robots/Homework3/blob/master/Figures/1.png" width="80%" height="40%">
 
@@ -68,5 +71,6 @@ The while loop should break after six times of rotation.
 <img src="https://github.com/Robotics-Aerial-Robots/Homework3/blob/master/Figures/7.png" width="90%" height="50%">
 
 Your result should look like this.
-<img src="https://github.com/Robotics-Aerial-Robots/Homework3/blob/master/Figures/transform_result.png" width="80%" height="40%">
+<img src="https://github.com/Robotics-Aerial-Robots/Homework3/blob/master/Figures/transform_result.png" width="60%" height="40%">
+
 ---
