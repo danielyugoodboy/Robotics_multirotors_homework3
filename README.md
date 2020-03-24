@@ -19,7 +19,7 @@ Deadline:
 ```
 
 ### eigen_tutorial.cpp
-Declare Eigen 4x4 Matrix with each element as double.
+Declare Eigen 4x4 Matrix with each element as double. \
 We can directly given the matrix value by <<.
 Matrix addition and subtraction can also be apply by + and -.
 transform1 represent rotation of Z-axis in -90 and translation of X-axis in 1. 
@@ -27,15 +27,15 @@ transform2 represent rotation of Z-axis in 90 and translation of Y-axis in -1.
 <img src="https://github.com/Robotics-Aerial-Robots/Homework3/blob/master/Figures/rotation.png" width="60%" height="20%">
 <img src="https://github.com/Robotics-Aerial-Robots/Homework3/blob/master/Figures/1.png" width="80%" height="40%">
 
-Declare Eigen 3x1 Vector with each element as double.
+Declare Eigen 3x1 Vector with each element as double. \
 Vector dot and cross operation are applied.
 <img src="https://github.com/Robotics-Aerial-Robots/Homework3/blob/master/Figures/2.png" width="80%" height="50%">
 
-Declare Eigen 3x3 Matrix and 3x1 Vector.
-By apply block operation to Eigen 4x4 Matrix, we can obtain a sub-block.
-For example, block<3,3>(0,0) means extract a Eigen 3x3 Matrix from the matrix in (0,0) element.
-Then apply two transformation to the vector.
-We should notice applying rotation first and translation first will have different result.
+Declare Eigen 3x3 Matrix and 3x1 Vector. \
+By apply block operation to Eigen 4x4 Matrix, we can obtain a sub-block. \
+For example, block<3,3>(0,0) means extract a Eigen 3x3 Matrix from the matrix in (0,0) element. \
+Then apply two transformation to the vector. \
+We should notice applying rotation first and translation first will have different result. \
 These two types of transformation is oftenly used, one should use rotation first or translation first depend on the frame of transformation.
 <img src="https://github.com/Robotics-Aerial-Robots/Homework3/blob/master/Figures/3.png" width="80%" height="50%">
 
@@ -43,7 +43,7 @@ These two types of transformation is oftenly used, one should use rotation first
 Declare Eigen 3x1 Vector of point (1,0,0) and euler angle (0,0,90) in degree.
 <img src="https://github.com/Robotics-Aerial-Robots/Homework3/blob/master/Figures/4.png" width="80%" height="40%">
 
-Convert euler angle to radians. 
+Convert euler angle to radians.  \
 Then convert to quaternion.
 <img src="https://github.com/Robotics-Aerial-Robots/Homework3/blob/master/Figures/5.png" width="70%" height="30%">
 
@@ -59,12 +59,14 @@ Implement the code for conversion.
 <img src="https://github.com/Robotics-Aerial-Robots/Homework3/blob/master/Figures/Q2E.png" width="60%" height="10%">
 <img src="https://github.com/Robotics-Aerial-Robots/Homework3/blob/master/Figures/10.png" width="80%" height="40%">
 
-Eigen slerp is a function to obtain a propotion rotation.
+Eigen slerp is a function to obtain a propotion rotation. \
 Here we set s=0.667, so the 0.667 of 90 degrees will be 60.
 <img src="https://github.com/Robotics-Aerial-Robots/Homework3/blob/master/Figures/6.png" width="80%" height="40%">
 
-Apply the rotation after slerp(Q_tmp) to the point(world_point).
+Apply the rotation after slerp(Q_tmp) to the point(world_point). \
 The while loop should break after six times of rotation.
 <img src="https://github.com/Robotics-Aerial-Robots/Homework3/blob/master/Figures/7.png" width="90%" height="50%">
 
+Your result should look like this.
+<img src="https://github.com/Robotics-Aerial-Robots/Homework3/blob/master/Figures/transform_result.png" width="80%" height="40%">
 ---
