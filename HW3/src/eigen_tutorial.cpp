@@ -23,15 +23,15 @@ int main(int argc, char **argv)
 
     // Matrix addition and subtraction
     Eigen::Matrix4d transform1;
-    transform1 << 0, -1, 0, 1,
-                  1, 0, 0, 0,
-                  0, 0, 1, 0,
-                  0, 0, 0, 1;
+    transform1 <<  0, -1,  0,  1,
+                   1,  0,  0,  0,
+                   0,  0,  1,  0,
+                   0,  0,  0,  1;
     Eigen::Matrix4d transform2;
-    transform2 << 0, 1, 0, 0,
-                  -1, 0, 0, -1,
-                  0, 0, 1, 0,
-                  0, 0, 0, 1;
+    transform2 <<  0,  1,  0,  0,
+                  -1,  0,  0, -1,
+                   0,  0,  1,  0,
+                   0,  0,  0,  1;
     std::cout << "transform1: \n" << transform1 << std::endl;
     std::cout << "transform2: \n" << transform2 << std::endl;
     std::cout << "transform1 + transform2: \n" << transform1 + transform2 << std::endl;
@@ -50,6 +50,8 @@ int main(int argc, char **argv)
     while (ros::ok())
     {
         // Block opertaion for rotation and translation
+        //matrix.block<p,q>(i,j);
+        //block <p,q> 可理解為一個p行q列的子矩陣，該定義表示從原矩陣中第(i, j)開始，獲取一個p行q列的子矩陣，返回該子矩陣組成的臨時矩陣對象，原矩陣的元素不變。
         Eigen::Matrix3d rotation1 = transform1.block<3,3>(0,0);
         Eigen::Matrix3d rotation2 = transform2.block<3,3>(0,0);
         Eigen::Vector3d translation1 = transform1.block<3,1>(0,3);
