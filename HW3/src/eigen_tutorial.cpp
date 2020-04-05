@@ -1,14 +1,16 @@
 #include "ros/ros.h"
 #include <Eigen/Dense>
-
+// Define two important function
 Eigen::Vector3d TranslationFirst(Eigen::Vector3d vector,
-                                 Eigen::Matrix3d rotation, Eigen::Vector3d translation){
+                                 Eigen::Matrix3d rotation,
+                                 Eigen::Vector3d translation){
     vector = rotation * (vector + translation);
     return vector;
 }
 
 Eigen::Vector3d RotationFirst(Eigen::Vector3d vector,
-                              Eigen::Matrix3d rotation, Eigen::Vector3d translation){
+                              Eigen::Matrix3d rotation,
+                              Eigen::Vector3d translation){
     vector = rotation * vector + translation;
     return vector;
 }
